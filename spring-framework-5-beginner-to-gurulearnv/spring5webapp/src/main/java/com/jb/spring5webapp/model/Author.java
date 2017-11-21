@@ -21,6 +21,13 @@ public class Author {
     public Author() {
     }
 
+    public static Author of(String firstName, String lastName) {
+        Author author = new Author();
+        author.firstName = firstName;
+        author.lastName = lastName;
+        return author;
+    }
+
     public Long getId() {
         return id;
     }
